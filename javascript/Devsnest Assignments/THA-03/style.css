@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section{
+    margin: 3rem 10rem 1rem 12rem;
+    border: 2px solid rgb(74, 74, 143);
+    padding: 2rem 6rem 0rem 6rem;
+    color: rgb(74, 74, 143) ;
+}
+
+section .title{
+    margin-left: 20rem;
+    height: 3rem;
+    width: 30%;
+    position: relative;
+    text-align: center;
+    top: -50px;
+    background-color: white;
+}
+
+main{
+    display: flex;
+}
+
+.container{
+    width: 24rem;
+    padding: 0.5rem 2rem 1rem 1rem;
+}
+
+.container-r{
+    padding-bottom: 4rem;
+}
+
+.container h3, .container-r h3{
+    margin-bottom: 0.5rem;
+}
+
+.container p,li,address{
+    font-size: 12px;
+}
+.container-r p,li,address{
+    font-size: 12px;
+}
+
+.vl{
+    position: relative;
+    border-left: 2px solid rgb(74, 74, 143);
+    height: 30rem;
+    padding: 2rem;
+}
+
+
