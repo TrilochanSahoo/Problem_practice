@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+.screen{
+    height: 1rem;
+    width: 30rem;
+    background-color: black;
+    border-radius: 1rem 1rem 0 0;
+}
+.seat_details{
+    margin: 2rem;
+    /* padding: 1rem; */
+    display:flex;
+}
+.seat_details h2{
+    margin: 2rem;
+}
+
+.container{
+    height: 20rem;
+    width: 30rem;
+    background-color: turquoise;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .seat{
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid whitesmoke;
+    /* color: turquoise; */
+    margin: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container .seat:hover{
+    background: rgb(236, 236, 236);
+}
+
+.active{
+    background: white;
+    color: black;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
