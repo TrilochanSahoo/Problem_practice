@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 20rem;
+    width: 20rem;
+    margin: 10rem auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+div header h1{
+    margin: 1rem;
+    justify-content: flex-start;
+    color: rgb(75, 75, 75);
+}
+
+div h3{
+    margin: 0.5rem 1rem;
+    color: rgb(129, 129, 129);
+}
+
+div ol{
+    margin: 1rem 2rem;
+}
+
+
+
+
+
+
+
