@@ -45,7 +45,7 @@ class question{
         }
     }
     display(){
-        questionTitle.innerText = this.question
+        questionTitle.innerText = `Q. ${this.question}`
         if(this.opt3===undefined){
             createChoice(this.opt1, this.answer)
             createChoice(this.opt2, this.answer)

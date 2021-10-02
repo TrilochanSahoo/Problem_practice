@@ -5,25 +5,50 @@
 }
 
 section{
-    height: 20rem;
-    width: 20rem;
-    margin: 10rem auto;
-    border: 1px solid black;
+    height: 32rem;
+    width: 30rem;
+    margin: 5rem auto auto auto;
+    /* border: 2px solid rgb(113, 8, 139); */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 div header h1{
     margin: 1rem;
     justify-content: flex-start;
-    color: rgb(75, 75, 75);
+    color: rgb(113, 8, 139);
 }
 
 div h3{
     margin: 0.5rem 1rem;
     color: rgb(129, 129, 129);
+}
+
+div .choices{
+    margin: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(250, 210, 184); */
+    border: none;
+    text-align: center;
+    /* font-size: 15px; */
+}
+
+.choices button{
+    margin: 1rem;
+    padding: 0.5rem;
+    /* background-color: rgb(218, 184, 250); */
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.choices button:hover{
+    background-color: rgb(234, 219, 236);
 }
 
 .correct{
@@ -33,4 +58,34 @@ div h3{
 .wrong{
     background-color: rgb(255, 189, 189);
     color: black;
+}
+
+.next_ques{
+    /* margin: 1rem; */
+    /* padding: 0.5rem; */
+    display: flex;
+    justify-content: end;
+}
+.next{
+    margin: 0rem 2rem;
+    margin-bottom: auto;
+    padding: 0.5rem;
+    border: 1px solid rgb(113, 8, 139);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.next:hover{
+    border: none;
+    background-color: rgb(113, 8, 139);
+    color: white;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px){
+    section{
+        height: 33rem;
+        width: 20rem;
+        margin: 5rem 1rem;       
+    }
 }
