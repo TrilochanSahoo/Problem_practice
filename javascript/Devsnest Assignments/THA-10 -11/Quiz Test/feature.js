@@ -45,7 +45,7 @@ class question{
         }
     }
     display(){
-        questionTitle.innerText = `Q. ${this.question}`
+        questionTitle.innerHTML = `Q. ${this.question}`
         if(this.opt3===undefined){
             createChoice(this.opt1, this.answer)
             createChoice(this.opt2, this.answer)
@@ -57,13 +57,13 @@ class question{
         }
     }
 }
+u
 function shuffle(array) {
     var i = array.length,
         j = 0,
         temp
     while (i--) {
         j = Math.floor(Math.random() * (i+1))
-        // swap randomly chosen element with current element
         temp = array[i]
         array[i] = array[j]
         array[j] = temp
