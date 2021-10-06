@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main {
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+}
