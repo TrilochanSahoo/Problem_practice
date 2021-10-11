@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THA 11</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css" integrity="sha512-ykRBEJhyZ+B/BIJcBuOyUoIxh0OfdICfHPnPfBy7eIiyJv536ojTCsgX8aqrLQ9VJZHGz4tvYyzOM0lkgmQZGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css" integrity="sha512-ykRBEJhyZ+B/BIJcBuOyUoIxh0OfdICfHPnPfBy7eIiyJv536ojTCsgX8aqrLQ9VJZHGz4tvYyzOM0lkgmQZGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>
-            Todo List
+            TODO LIST
         </h1>
     </header>
     <main>
-        <section>
-            <input class="inputField" type="text">
-            <button class="addBtn">Add</button>
+        <section  class="container">
+            <input class="inputField" type="text" placeholder="Enter your tasks">
+            <input type="hidden" id="saveId">
+            <div>
+                <button class="addBtn btn">Add</button>
+                <button class="saveBtn btn" style="display: none;">save</button>
+                <button class="deleteBtn btn">Delete All</button>
+            </div>
             <ul class="list_container">
             </ul>
         </section>

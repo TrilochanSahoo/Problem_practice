@@ -1,11 +1,85 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*, *:before, *:after{
+    box-sizing: inherit;
 }
 
-header, main {
-    margin: 2rem 0rem;
+html {
+    box-sizing: border-box;
+    background: #ff7dee;
+    font-family: 'helvetica neue';
+    font-weight: 200;
+}
+
+header, main ,div{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+}
+
+.container{
+    max-width: 400px;
+}
+
+input.inputField{
+    /* margin: 1rem; */
+    text-align: center;
+    outline: 0;
+    border: 10px solid white;
+    width: 120%;
+    left: -10%;
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19); */
+}
+
+div{
+    flex: content;
+}
+
+button{
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+.btn{
+    height: 2rem;
+    width: 5rem;
+    margin: 2rem auto 1rem auto;
+    padding: 0.3rem;
+}
+
+.list_container{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+button:hover{
+    color: white;
+    background-color: #ff7dee;
+    border: 1px solid white;
+}
+
+.list_container li{
+    background: white;
+    list-style: none;
+    border-bottom: 1px solid #D8D8D8;
+    box-shadow: 0 0 10px rgba(0,0,0,0.14);
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.title{
+    flex: 2;
+    margin: 0 0 0 1rem;
+    padding: 0.5rem 0 0 0;
 }
