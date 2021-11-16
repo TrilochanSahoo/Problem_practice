@@ -22,9 +22,12 @@
 # -109 <= nums[i] <= 109
 # -109 <= target <= 109
 
-num_map = {}
-for i in range(len(nums)):
-    num = nums[i]
-    if (target-num) in num_map:
-        print(num_map[target-num], i)
-    num_map[num] = i
+class Solution(object):
+    def twoSum(self, nums, target):
+        num_map = {}
+        for i in range(len(nums)):
+            num = nums[i]
+            if (target-num) in num_map:
+                return (num_map[target-num], i)
+            num_map[num] = i
+            

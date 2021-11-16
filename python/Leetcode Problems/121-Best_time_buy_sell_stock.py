@@ -20,12 +20,14 @@
 # 1 <= prices.length <= 10^5
 # 0 <= prices[i] <= 10^4
 
-min_price = 100000
-profit = 0
-for i in range(len(prices)):
-    if (prices[i]<min_price):
-        min_price = prices[i]
-    elif(profit<(prices[i]-min_price)):
-        profit = prices[i] - min_price
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        min_price = 100000
+        profit = 0
+        for i in range(len(prices)):
+            if (prices[i]<min_price):
+                min_price = prices[i]
+            elif(profit<(prices[i]-min_price)):
+                profit = prices[i] - min_price
 
-print(profit)
+        return profit
